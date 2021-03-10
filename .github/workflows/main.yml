@@ -16,8 +16,8 @@ jobs:
           npm install
           npm run build
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+        uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
-          ACCESS_TOKEN: ${{ secrets.PUSH_GITHUB }}
-          BRANCH: gh-pages
-          FOLDER: build
+          ssh-key: ${{ secrets.PUSH_GITHUB }}
+          branch: gh-pages
+          folder: build
