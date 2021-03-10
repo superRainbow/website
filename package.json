@@ -1,6 +1,6 @@
 {
   "name": "website",
-  "description": "個人網站",
+  "description": "利用 github actions 更新個人網站",
   "version": "1.0.0",
   "author": "rainbow",
   "license": "MIT",
