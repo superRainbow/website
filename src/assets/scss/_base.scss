@@ -1,0 +1,43 @@
+/** 基本設定 **/
+*{
+  box-sizing: border-box;
+}
+html, body{
+  font-family: PingFangTC-Regular, Microsoft JhengHei, Arial, 微軟正黑體, sans-serif;
+}
+body{
+  letter-spacing: 0.65px;
+  font-size: $base-font-size;
+  color: $theme-middle-grey;
+}
+
+h2{
+  color: $theme-bule;
+  font-weight: 600;
+  font-size: 2em;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid $theme-bule;
+}
+p{
+  line-height: 1.6em;
+  margin: 10px 0;
+}
+
+.el-progress{
+  &:hover{
+    .el-progress-bar__inner{
+      transition: background-color 350ms ease-in-out;
+      background-color: $theme-bule;
+    }
+    .el-progress-circle__path{
+      stroke: $theme-bule;
+    }
+  }
+  .el-progress-bar__inner{
+    background-color: #a3d7e2;
+  }
+  .el-progress-circle__path{
+    stroke: #a3d7e2;
+  }
+}
