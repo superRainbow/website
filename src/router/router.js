@@ -4,21 +4,20 @@ import Work from '@/components/pages/Work.vue';
 import Blog from '@/components/pages/Blog.vue';
 
 export default new VueRouter({
+  base: '/website',
   routes: [
-    { path: '/',
-      redirect: '/about',
-    },
+    { path: '/', redirect: '/about' },
     {
       path: '/about',
-      component: About
+      component: About,
     },
     {
       path: '/work',
-      component: Work
+      component: Work,
     },
     {
       path: '/blog',
-      component: Blog
-    }
-  ]
+      component: Blog,
+    },
+  ],
 });
