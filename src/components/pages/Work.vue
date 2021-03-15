@@ -194,7 +194,7 @@
             <section>
               <h4>
                 <span>個人介紹網站</span>
-                <a href="https://superrainbow.github.io/"
+                <a href="https://superrainbow.github.io/website"
                    target="_blank">
                   <font-awesome-icon icon="link" />
                 </a>
