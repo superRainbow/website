@@ -1,0 +1,152 @@
+[
+  {
+    "title": "AngularJs",
+    "projects": [
+      {
+        "name": "官方帳號",
+        "url": "",
+        "code": "",
+        "des": "開發類似微信、Line@ 官方帳號後台，連動顯示在綁定的 APP上。",
+        "img": "channel.jpg",
+        "skills": [
+          "導入 Scrum 開發專案",
+          "SPA 網站架構",
+          "Restful Api (Api 文件放置 gitbook 溝通)",
+          "使用 Slack channel 來溝通專案"
+        ]
+      },
+      {
+        "name": "迷塔克",
+        "url": "",
+        "code": "",
+        "des": "開發使用者能進行現場即時互動問答遊戲的後台，透過Web後台、APP建立與主持遊戲室。",
+        "img": "mitake.jpg",
+        "skills": [
+          "SPA 網站架構",
+          "Restful Api (Api 文件放置 gitbook 溝通)",
+          "使用 Slack channel 來溝通專案",
+          "使用 Trello 來規劃需求與追蹤問題"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Angular2/4",
+    "projects": [
+      {
+        "name": "野村投信",
+        "url": "https://www.nomurafunds.com.tw/",
+        "code": "",
+        "des": "協助廠商開發對外交易網站，總共有六個前後平臺。",
+        "img": "nomura.jpg",
+        "skills": [
+          "SPA 網站架構",
+          "Restful Api (使用 Swagger 來溝通測試)",
+          "使用 Slack channel 來溝通專案",
+          "使用 Trello 來規劃需求與追蹤問題"
+        ]
+      },
+      {
+        "name": "輔銷系統",
+        "url": "http://star.mitake.com.tw/",
+        "code": "",
+        "des": "協助公司產品製作宣傳頁面。",
+        "img": "star.jpg",
+        "skills": ["SPA 網站架構", "使用 Trello 來規劃需求與追蹤問題"]
+      }
+    ]
+  },
+  {
+    "title": "Node",
+    "projects": [
+      {
+        "name": "餐廳網站",
+        "url": "https://gentle-caverns-16793.herokuapp.com/",
+        "code": "https://github.com/superRainbow/rainbow-restaurant",
+        "des": "自己練習使用 Node 並結合 Express 開發一個小型網站。",
+        "img": "restaurant.jpg",
+        "skills": [
+          "Expree 建立網站",
+          "具有購物車、登入、申請、信件通知功能",
+          "結合 Firebase 來串接資料",
+          "網站架在 Heroku 上"
+        ]
+      },
+      {
+        "name": "天氣預報",
+        "url": "https://ancient-earth-93221.herokuapp.com/",
+        "code": "https://github.com/superRainbow/node-weather",
+        "des": "自己練習使用 Node 來爬別人網站並顯示到自己的頁面上。",
+        "img": "weater.png",
+        "skills": [
+          "phantom & cheerio 抓取中央氣象局資料",
+          "express 建立網站",
+          "網站架在 Heroku 上"
+        ]
+      },
+      {
+        "name": "line-bot",
+        "url": "",
+        "code": "https://github.com/superRainbow/line-bot",
+        "des": "當輸入特定文字會秀出相關的文字或圖片",
+        "img": "https://developers.line.biz/media/services/bot-designer-main-contents.png",
+        "skills": ["使用 linebot 來寫機器人的動作"]
+      },
+      {
+        "name": "telegram-bot",
+        "url": "",
+        "code": "https://github.com/superRainbow/telegram-bot",
+        "des": "工作上做一個簡單的問題回饋機器人",
+        "img": "http://tegflne.com/img2/iphone_img.png",
+        "skills": [
+          "資料儲存至 MongoDB",
+          "產報表工具使用 exceljs",
+          "telegram 套件：telegraf"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Vue",
+    "projects": [
+      {
+        "name": "Vue3-admin",
+        "url": "https://superrainbow.github.io/vue3-admin",
+        "code": "https://github.com/superRainbow/vue3-admin",
+        "des": "使用 Vue3 來開發後台系統",
+        "img": "vue3-admin.png",
+        "skills": [
+          "使用 Vue3 Composition API + Typescript",
+          "使用 Prettier & Lint 規範程式與檢查程式",
+          "使用 Commitizen 規範 commit",
+          "使用 Mock 模擬串接 API"
+        ]
+      },
+      {
+        "name": "邦邦",
+        "url": "https://streamtopic.pixnet.net",
+        "code": "",
+        "des": "公司產品：類似 FB 社群功能的平台",
+        "img": "streamtopic.png",
+        "skills": [
+          "前端使用 Vue2＋SCSS 開發公司產品，後端使用 PHP",
+          "E2E 測試使用 Cypress",
+          "有使用 GA、GTM 追蹤成效",
+          "使用 Sentry 監控錯誤"
+        ]
+      },
+      {
+        "name": "個人介紹網站",
+        "url": "https://superrainbow.github.io/website",
+        "code": "https://github.com/superRainbow/website",
+        "des": "自己練習使用 Vue 開發一個小型網站。",
+        "img": "index.png",
+        "skills": [
+          "結合 Vue-cli、Vue-router、vuex",
+          "結合 github actions 自動網站更版",
+          "網站架在 github page 上"
+        ]
+      }
+    ]
+  }
+]
