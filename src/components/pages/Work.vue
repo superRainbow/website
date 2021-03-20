@@ -185,6 +185,7 @@ export default {
           }
           section {
             margin-bottom: 20px;
+            padding-left: 0;
           }
           img,
           .angular,

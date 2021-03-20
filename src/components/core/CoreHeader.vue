@@ -5,7 +5,10 @@
       <font-awesome-icon icon="bars" />
     </a>
     <div class="rainbow">
-      <div class="photo"><img src="@/assets/img/rainbow.jpg" /></div>
+      <router-link to="/"
+                   class="photo">
+        <img src="@/assets/img/rainbow.jpg" />
+      </router-link>
       <div class="info">
         <h4>Rainbow</h4>
         <small>Front End Web Developer</small>
