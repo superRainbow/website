@@ -1,71 +1,71 @@
 {
   "main": [
     {
-      "title": "CSS3 & SCSS",
-      "des": ""
+      "title": "CSS3",
+      "icon": ["fab", "css3-alt"]
     },
     {
-      "title": "JavaScript",
-      "des": ""
+      "title": "SCSS",
+      "icon": ["fab", "sass"]
     },
     {
-      "title": "jQuery",
-      "des": ""
+      "title": "JavaScript(ES6)",
+      "icon": ["fab", "js-square"]
     },
     {
-      "title": "AngularJS",
-      "des": ""
+      "title": "Angular (1/2)",
+      "icon": ["fab", "angular"]
     },
     {
-      "title": "Angular2/4",
-      "des": ""
-    },
-    {
-      "title": "Vue2",
-      "des": ""
-    },
-    {
-      "title": "Vue3",
-      "des": ""
+      "title": "Vue (2/3)",
+      "icon": ["fab", "vuejs"]
     },
     {
       "title": "NodeJS",
-      "des": ""
+      "icon": ["fab", "node-js"]
     }
   ],
   "other": [
     {
       "title": "Design",
       "des": [
-        "使用：PS、Sketch",
+        "PS、Sketch",
         "簡單的設計與切版",
-        "基本的 UI、UX 觀念",
+        "基本 UI、UX 觀念",
         "與設計師合作的經驗"
       ]
     },
     {
       "title": "Wireframe",
-      "des": "Wireframe 實作"
+      "des": ["Wireframe 實作"]
     },
     {
       "title": "GIT",
       "des": ["GUI：Source Tree", "command line"]
     },
     {
-      "title": "SEO",
-      "des": ["HTML語義化", "Google Analytics"]
+      "title": "網站分析偵測",
+      "des": ["GA", "GTM"]
     },
     {
       "title": "自動化",
       "des": ["gulp", "gulp、webpack"]
     },
     {
-      "title": "",
-      "des": ""
+      "title": "E2E test",
+      "des": ["webdriver", "Cypress"]
     },
     {
       "title": "第三方串接",
       "des": ["Facebook API", "Google Map"]
+    },
+    {
+      "title": "監控服務",
+      "des": ["導入 Sentry"]
+    },
+    {
+      "title": "Scrum",
+      "des": ["參與 Scrum 專案開發經驗"]
     }
   ]
 }
