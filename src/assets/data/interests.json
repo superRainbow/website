@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Yoga",
+    "icon": "user"
+  },
+  {
+    "title": "Paint",
+    "icon": "paint-brush"
+  },
+  {
+    "title": "Hiking",
+    "icon": "hiking"
+  },
+  {
+    "title": "Trival",
+    "icon": "plane"
+  },
+  {
+    "title": "Photo",
+    "icon": "camera"
+  },
+  {
+    "title": "Movie",
+    "icon": "film"
+  }
+]

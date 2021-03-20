@@ -1,0 +1,71 @@
+{
+  "main": [
+    {
+      "title": "CSS3 & SCSS",
+      "des": ""
+    },
+    {
+      "title": "JavaScript",
+      "des": ""
+    },
+    {
+      "title": "jQuery",
+      "des": ""
+    },
+    {
+      "title": "AngularJS",
+      "des": ""
+    },
+    {
+      "title": "Angular2/4",
+      "des": ""
+    },
+    {
+      "title": "Vue2",
+      "des": ""
+    },
+    {
+      "title": "Vue3",
+      "des": ""
+    },
+    {
+      "title": "NodeJS",
+      "des": ""
+    }
+  ],
+  "other": [
+    {
+      "title": "Design",
+      "des": [
+        "使用：PS、Sketch",
+        "簡單的設計與切版",
+        "基本的 UI、UX 觀念",
+        "與設計師合作的經驗"
+      ]
+    },
+    {
+      "title": "Wireframe",
+      "des": "Wireframe 實作"
+    },
+    {
+      "title": "GIT",
+      "des": ["GUI：Source Tree", "command line"]
+    },
+    {
+      "title": "SEO",
+      "des": ["HTML語義化", "Google Analytics"]
+    },
+    {
+      "title": "自動化",
+      "des": ["gulp", "gulp、webpack"]
+    },
+    {
+      "title": "",
+      "des": ""
+    },
+    {
+      "title": "第三方串接",
+      "des": ["Facebook API", "Google Map"]
+    }
+  ]
+}
