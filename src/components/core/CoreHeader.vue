@@ -15,11 +15,11 @@
       </div>
     </div>
     <nav :class="isShow">
-      <el-menu :default-active="activeItem"
+      <el-menu :default-active="$route.path"
                :router="true">
         <el-menu-item v-for="(item, i) in routeArray"
                       :key="i"
-                      :index="item.name"
+                      :index="item.path"
                       :route="item.path"
                       @click="toggleMenu">
           {{item.name}}
@@ -52,12 +52,6 @@ export default {
       data,
       routeArray: this.$store.state.route,
     };
-  },
-  mounted() {
-    const activeIndex = this.$store.state.route.findIndex(
-      item => item.path === this.$route.path
-    );
-    this.activeItem = this.$store.state.route[activeIndex].name;
   },
   methods: {
     toggleMenu() {
