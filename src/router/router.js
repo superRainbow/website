@@ -10,14 +10,17 @@ export default new VueRouter({
     {
       path: '/about',
       component: About,
+      meta: { title: 'ABOUT ME' },
     },
     {
       path: '/work',
       component: Work,
+      meta: { title: 'WORK' },
     },
     {
       path: '/blog',
       component: Blog,
+      meta: { title: 'BLOG' },
     },
   ],
 });

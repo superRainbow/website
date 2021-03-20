@@ -1,0 +1,18 @@
+[
+  {
+    "link": "https://mail.google.com/mail/?view=cm&fs=1&to=g901612002@gmail.com",
+    "icon": "envelope"
+  },
+  {
+    "link": "https://www.facebook.com/profile.php?id=100000133231966",
+    "icon": ["fab", "facebook-f"]
+  },
+  {
+    "link": "https://github.com/superRainbow",
+    "icon": ["fab", "github-alt"]
+  },
+  {
+    "link": "https://codepen.io/g901612002/",
+    "icon": ["fab", "codepen"]
+  }
+]

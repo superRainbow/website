@@ -1,6 +1,5 @@
 <template>
   <div class="work">
-    <h2>WORK</h2>
     <el-collapse v-model="activeName"
                  accordion>
       <el-collapse-item v-for="(item, index) in data"
@@ -58,7 +57,6 @@ import data from '@/assets/data/work.json';
 import { isLocalUrl } from '@/utils/validate.js';
 
 export default {
-  name: 'work',
   data() {
     return {
       activeName: 0,

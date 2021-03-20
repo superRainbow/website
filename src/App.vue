@@ -1,7 +1,8 @@
 <template>
   <div>
-    <core-header></core-header>
+    <CoreHeader />
     <main>
+      <h2>{{title}}</h2>
       <router-view />
     </main>
   </div>
@@ -11,14 +12,22 @@
 import CoreHeader from '@/components/core/CoreHeader.vue';
 
 export default {
-  name: 'app',
   components: {
     CoreHeader
   },
   data() {
     return {
-
+      title: '',
     }
+  },
+  watch: {
+    $route: {
+      immediate: true,
+      deep: true,
+      handler(to) {
+        this.title = to.meta.title || 'Some Default Title';
+      }
+    },
   }
 }
 </script>

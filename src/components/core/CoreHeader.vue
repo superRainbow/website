@@ -25,39 +25,11 @@
       <div class="other">
         <h4>CONTACT/FOLLOW</h4>
         <ul>
-          <li>
-            <a href="https://superrainbow.github.io">
-              <font-awesome-icon icon="home" />
-            </a>
-          </li>
-          <li>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=g901612002@gmail.com"
+          <li v-for="(item, index) in data"
+              :key="`contact-${index}`">
+            <a :href="item.link"
                target="_blank">
-              <font-awesome-icon icon="envelope" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/profile.php?id=100000133231966"
-               target="_blank">
-              <font-awesome-icon :icon="['fab', 'facebook-f']" />
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/superRainbow"
-               target="_blank">
-              <font-awesome-icon :icon="['fab', 'github-alt']" />
-            </a>
-          </li>
-          <li>
-            <a href="https://gitlab.com/g901612002"
-               target="_blank">
-              <font-awesome-icon :icon="['fab', 'gitlab']" />
-            </a>
-          </li>
-          <li>
-            <a href="https://codepen.io/g901612002/"
-               target="_blank">
-              <font-awesome-icon :icon="['fab', 'codepen']" />
+              <font-awesome-icon :icon="item.icon" />
             </a>
           </li>
         </ul>
@@ -67,12 +39,15 @@
 </template>
 
 <script>
+import data from '@/assets/data/contact.json';
+
 export default {
   data() {
     return {
       isShow: "",
       activeItem: "",
-      routeArray: this.$store.state.route
+      data,
+      routeArray: this.$store.state.route,
     };
   },
   mounted() {
@@ -224,11 +199,12 @@ header {
       display: block;
     }
     .rainbow {
-      padding: 10px 20px;
+      padding: 15px 20px;
       margin: 0;
       display: flex;
+      clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
       &:after {
-        height: 40px;
+        display: none;
       }
       .photo {
         width: 60px;
@@ -268,9 +244,19 @@ header {
         transition: opacity 1500ms ease-in-out, height 1500ms ease-in-out;
       }
       &.show {
+        position: relative;
         display: block;
         padding-top: 50px;
         height: 100%;
+        &:after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 30px;
+          top: -30px;
+          left: 0;
+          background: #f5f5f5;
+        }
         .el-menu {
           opacity: 1;
           height: auto;
