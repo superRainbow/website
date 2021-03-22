@@ -255,7 +255,8 @@ header {
         opacity: 0;
         margin-top: 0;
         overflow: hidden;
-        transition: opacity 1500ms ease-in-out, height 1500ms ease-in-out;
+        transition: opacity 0.2s ease-in-out, height 0.2s ease-in-out;
+        transition-delay: 0.8s;
       }
       &.show {
         position: relative;
