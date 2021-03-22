@@ -2,8 +2,11 @@
   <div class="about">
     <div class="me">
       <div class="photo">
-        <img src="@/assets/img/aboutme.jpg"
-             alt="">
+        <el-image :src="require('@/assets/img/aboutme.jpg')"
+                  :lazy="true">
+          <div slot="placeholder"
+               class="image-slot">Loading...</div>
+        </el-image>
       </div>
       <div>
         <h1>吳采洪 / Rainbow 🌈</h1>
@@ -56,10 +59,21 @@ export default {
   .photo {
     width: 250px;
     margin-right: 50px;
-    img {
-      width: 100%;
-      height: auto;
+    img,
+    .image-slot {
+      width: 250px;
+      height: 250px;
       border-radius: 50%;
+      background: #f5f5f5;
+    }
+    .image-slot {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 0.8em;
+      color: #7c7c7c;
     }
   }
   h1 {
@@ -74,6 +88,11 @@ export default {
       width: 60%;
       margin-right: 0;
       margin-bottom: 30px;
+      img,
+      .image-slot {
+        width: 210px;
+        height: 210px;
+      }
     }
   }
 }

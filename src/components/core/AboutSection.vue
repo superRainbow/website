@@ -12,8 +12,12 @@
         <p class="title">{{ item.title }}</p>
         <font-awesome-icon v-if="item.icon"
                            :icon="item.icon" />
-        <img v-if="item.img"
-             :src="isLocalUrl(item.img)? imgPath(item.img) : item.img">
+        <el-image v-if="item.img"
+                  :src="isLocalUrl(item.img)? imgPath(item.img) : item.img"
+                  :lazy="true">
+          <div slot="placeholder"
+               class="image-slot">Loading...</div>
+        </el-image>
         <template v-if="item.des">
           <ul v-if="isArray(item.des)">
             <li v-for="i in item.des"

@@ -7,7 +7,11 @@
     <div class="rainbow">
       <router-link to="/"
                    class="photo">
-        <img src="@/assets/img/rainbow.jpg" />
+        <el-image :src="require('@/assets/img/rainbow.jpg')"
+                  :lazy="true">
+          <div slot="placeholder"
+               class="image-slot">Loading...</div>
+        </el-image>
       </router-link>
       <div class="info">
         <h4>Rainbow</h4>
@@ -104,10 +108,21 @@ header {
       z-index: -1;
     }
     .photo {
-      img {
-        width: 95%;
+      img,
+      .image-slot {
+        width: 185px;
+        height: 185px;
         border-radius: 50%;
         border: 5px solid #fff;
+        background: #f5f5f5;
+      }
+      .image-slot {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        font-size: 0.8em;
+        color: #7c7c7c;
       }
     }
     .info {
@@ -205,8 +220,10 @@ header {
       }
       .photo {
         width: 60px;
-        img {
-          width: 100%;
+        img,
+        .image-slot {
+          width: 60px;
+          height: 60px;
           border-radius: 50%;
           border: 2px solid #fff;
         }

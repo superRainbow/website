@@ -43,8 +43,13 @@
                     :key="skill">{{skill}}</li>
               </ol>
             </section>
-            <img v-if="project.img"
-                 :src="isLocalUrl(project.img)? imgPath(project.img) : project.img">
+            <el-image v-if="project.img"
+                      :src="isLocalUrl(project.img)? imgPath(project.img) : project.img"
+                      fit="cover"
+                      :lazy="true">
+              <div slot="placeholder"
+                   class="image-slot">Loading...</div>
+            </el-image>
           </li>
         </ul>
       </el-collapse-item>
@@ -143,11 +148,23 @@ export default {
             list-style: inside;
           }
         }
-        img {
+        .el-image {
           order: 0;
+          display: block;
+          overflow: inherit;
+        }
+        img,
+        .image-slot {
           width: 400px;
           height: 300px;
-          object-fit: cover;
+        }
+        .image-slot {
+          display: flex;
+          align-items: center;
+          align-content: center;
+          justify-content: center;
+          font-size: 0.8em;
+          color: #7c7c7c;
         }
         .angular {
           width: 300px;
@@ -188,11 +205,10 @@ export default {
             padding-left: 0;
           }
           img,
-          .angular,
-          .vue {
+          .image-slot {
             order: 2;
             width: 100%;
-            height: auto;
+            height: 200px;
           }
         }
       }
