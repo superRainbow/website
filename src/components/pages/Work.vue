@@ -1,6 +1,7 @@
 <template>
   <div class="work">
     <el-collapse v-model="activeName"
+                 @change="collapseChange"
                  accordion>
       <el-collapse-item v-for="(item, index) in data"
                         :key="`collapse-${index}`"
@@ -72,6 +73,14 @@ export default {
     isLocalUrl,
     imgPath(img) {
       return require(`@/assets/img/${img}`);
+    },
+    collapseChange(index) {
+      let collapseHeight = document.querySelector('.el-collapse').offsetTop - 50;
+      let itemHeight = 48;
+      this.$nextTick(() => {
+        window.scroll(0, itemHeight * (index - 1) + collapseHeight);
+      });
+
     }
   }
 };
