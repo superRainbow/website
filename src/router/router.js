@@ -23,4 +23,7 @@ export default new VueRouter({
       meta: { title: 'BLOG' },
     },
   ],
+  scrollBehavior() {
+    return { x: 0, y: 0 };
+  },
 });
