@@ -19,14 +19,13 @@
       </div>
     </div>
     <nav :class="isShow">
-      <el-menu :default-active="$route.path"
-               :router="true">
-        <el-menu-item v-for="(item, i) in routeArray"
-                      :key="i"
-                      :index="item.path"
-                      :route="item.path"
+      <el-menu router>
+        <el-menu-item v-for="item in routeArray"
+                      :key="item.path"
                       @click="toggleMenu">
-          {{item.name}}
+          <a :class="{active: hasActiveClass(item.path)}"
+             :href="`${item.path}`"
+             target="_self">{{item.name}}</a>
         </el-menu-item>
       </el-menu>
       <div class="other">
@@ -52,14 +51,22 @@ export default {
   data() {
     return {
       isShow: "",
-      activeItem: "",
       data,
+      nowPath: this.$route.path,
       routeArray: this.$store.state.route,
     };
+  },
+  watch: {
+    $route(to) {
+      this.nowPath = to.path;
+    }
   },
   methods: {
     toggleMenu() {
       this.isShow = this.isShow === "" ? "show" : "";
+    },
+    hasActiveClass(path) {
+      return path.includes(this.nowPath);
     }
   }
 };
@@ -139,20 +146,26 @@ header {
     border: none;
     background: none;
     .el-menu-item {
-      text-align: center;
-      padding: 0 40px;
-      font-size: 1.1em;
-      color: #737879;
+      a {
+        display: block;
+        padding: 0 40px;
+        text-align: center;
+        font-size: 1.1em;
+        text-decoration: none;
+        color: #737879;
+      }
       & + .el-menu-item {
         border-top: 1px dashed #dfe5e6;
       }
-      &.is-active {
+      .active {
         color: $theme-orange;
       }
       &:hover,
       &:focus {
         background: none;
-        color: $theme-orange;
+        a {
+          color: $theme-orange;
+        }
       }
     }
   }

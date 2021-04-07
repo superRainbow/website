@@ -1,7 +1,6 @@
 import VueRouter from 'vue-router';
 import About from '@/components/pages/About.vue';
 import Work from '@/components/pages/Work.vue';
-import Blog from '@/components/pages/Blog.vue';
 
 export default new VueRouter({
   base: '/website',
@@ -16,11 +15,6 @@ export default new VueRouter({
       path: '/work',
       component: Work,
       meta: { title: 'WORK' },
-    },
-    {
-      path: '/blog',
-      component: Blog,
-      meta: { title: 'BLOG' },
     },
   ],
   scrollBehavior() {
