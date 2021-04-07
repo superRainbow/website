@@ -7,11 +7,11 @@ export default new Vuex.Store({
   state: {
     route: [
       {
-        path: '/#/about',
+        path: '/about',
         name: 'About',
       },
       {
-        path: '/#/work',
+        path: '/work',
         name: 'Work',
       },
       {

@@ -24,7 +24,7 @@
                       :key="item.path"
                       @click="toggleMenu">
           <a :class="{active: hasActiveClass(item.path)}"
-             :href="`${item.path}`"
+             :href="`${parseURL(item.path)}`"
              target="_self">{{item.name}}</a>
         </el-menu-item>
       </el-menu>
@@ -46,6 +46,7 @@
 
 <script>
 import data from '@/assets/data/contact.json';
+import { isURL } from '@/utils/validate.js';
 
 export default {
   data() {
@@ -67,6 +68,9 @@ export default {
     },
     hasActiveClass(path) {
       return path.includes(this.nowPath);
+    },
+    parseURL(string) {
+      return isURL(string) ? string : `${location.origin}${location.pathname}#${string}`;
     }
   }
 };
